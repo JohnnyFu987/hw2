@@ -45,18 +45,20 @@ flowchart TD
 ```
 
 ```mermaid
-flowchart TD
-    A[研擬計畫<br>開始: 2024-10-01<br>結束: 2024-10-01] -->|1天| B[任務分配<br>開始: 2024-10-02<br>結束: 2024-10-05]
-    A -->|1天| C[取得硬體<br>開始: 2024-10-02<br>結束: 2024-10-19]
-    B -->|4天| D[程式開發<br>開始: 2024-10-06<br>結束: 2024-12-14]
-    C -->|17天| E[安裝硬體<br>開始: 2024-10-20<br>結束: 2024-10-29]
-    D -->|70天| F[程式測試<br>開始: 2024-12-15<br>結束: 2025-01-13]
-    E -->|10天| G[撰寫使用手冊<br>開始: 2024-10-30<br>結束: 2024-11-13]
-    E -->|10天| H[轉換檔案<br>開始: 2024-10-30<br>結束: 2024-11-19]
-    F -->|30天| I[系統測試<br>開始: 2025-01-14<br>結束: 2025-02-12]
-    G -->|25天| J[使用者訓練<br>開始: 2024-11-14<br>結束: 2024-12-08]
-    H -->|20天| J[使用者訓練<br>開始: 2024-11-14<br>結束: 2024-12-08]
-    I -->|25天| K[使用者測試<br>開始: 2025-02-13<br>結束: 2025-03-09]
-    J -->|20天| K[使用者測試<br>開始: 2025-02-13<br>結束: 2025-03-09]
+graph TD;
+    A(研擬計畫) -->|1d| B(任務分配);
+    B -->|4d| C(取得硬體);
+    C -->|17d| D(程式開發);
+    D -->|70d| E(程式測試);
+    E -->|25d| I(系統測試);
+    I -->|25d| K(使用者測試);
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#f9f,stroke:#333,stroke-width:4px
+    style C fill:#f9f,stroke:#333,stroke-width:4px
+    style D fill:#f9f,stroke:#333,stroke-width:4px
+    style E fill:#f9f,stroke:#333,stroke-width:4px
+    style I fill:#f9f,stroke:#333,stroke-width:4px
+    style K fill:#f9f,stroke:#333,stroke-width:4px
+
 
 ```
