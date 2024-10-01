@@ -1,3 +1,5 @@
+# 項目甘特圖
+
 ```mermaid
 gantt
     title 項目甘特圖
@@ -25,7 +27,6 @@ gantt
     section 使用者測試
     使用者測試      :         des11, 2025-03-05, 25d
 
-```mermaid
 flowchart TD
     A[研擬計畫] -->|1天| B[任務分配]
     A -->|1天| C[取得硬體]
@@ -39,4 +40,3 @@ flowchart TD
     H -->|20天| J[使用者訓練]
     I -->|25天| K[使用者測試]
     J -->|20天| K[使用者測試]
-
