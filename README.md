@@ -47,12 +47,13 @@ graph TD;
 
 ```mermaid
 graph TD;
-    A(研擬計畫) -->|1d| B(任務分配);
-    B -->|4d| C(取得硬體);
-    C -->|17d| D(程式開發);
-    D -->|70d| E(程式測試);
-    E -->|25d| I(系統測試);
-    I -->|25d| K(使用者測試);
+    A(研擬計畫<br/> 1天<br/> 2024-10-01 - 2024-10-01) -->|1d| B(任務分配<br/> 4天<br/> 2024-10-02 - 2024-10-05);
+    B -->|4d| C(取得硬體<br/> 17天<br/> 2024-10-02 - 2024-10-18);
+    C -->|17d| D(程式開發<br/> 70天<br/> 2024-10-06 - 2024-12-14);
+    D -->|70d| E(程式測試<br/> 30天<br/> 2024-12-15 - 2025-01-13);
+    E -->|25d| I(系統測試<br/> 25天<br/> 2025-01-14 - 2025-02-07);
+    I -->|25d| K(使用者測試<br/> 25天<br/> 2025-02-08 - 2025-03-04);
+    
     style A fill:#f9f,stroke:#333,stroke-width:4px
     style B fill:#f9f,stroke:#333,stroke-width:4px
     style C fill:#f9f,stroke:#333,stroke-width:4px
@@ -60,6 +61,5 @@ graph TD;
     style E fill:#f9f,stroke:#333,stroke-width:4px
     style I fill:#f9f,stroke:#333,stroke-width:4px
     style K fill:#f9f,stroke:#333,stroke-width:4px
-
 
 ```
