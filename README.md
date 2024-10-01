@@ -1,5 +1,5 @@
 # 項目甘特圖
-
+```mermaid
 gantt
     title 項目甘特圖
     dateFormat  MM-DD
